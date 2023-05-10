@@ -1,0 +1,18 @@
+.black-border {
+  border: 1px solid rgb(65, 63, 63);
+}
+.item-1 {
+  padding-top: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.items {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.tree-box {
+  height: 150px;
+}
+.filter-box {
+  height: 50px;
+}
