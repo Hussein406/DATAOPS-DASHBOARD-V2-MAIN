@@ -1,0 +1,56 @@
+<div class="row m-3">
+  <div class="col-md-12 dashboard sidebar-link">
+    <span class="fw-bold fs-3">Dashboard</span>
+    <span class="ms-auto right-icon"
+      >Last Updated: {{ todayDate | date : "medium" }}</span
+    >
+  </div>
+</div>
+<div class="row">
+  <!-- <div *ngFor="let card of cards"> -->
+  <div class="col-md-3 text-center" *ngFor="let card of cards">
+    <div class="card text-bg-{{ card.textType }} mb-3  card-width">
+      <div class="card-header  display-6">
+        <i class="bi bi-{{ card.iconName }} "></i>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text display-5">{{ card.statusNo }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- <div class="col-md-3">
+        <div class="card text-bg-danger mb-3 card-width" >
+          <div class="card-header">
+            <i class="bi bi-exclamation-octagon"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ended Not OK: 4</h5>
+            <p class="card-text">23</p>
+          </div>
+        </div>
+      </div> -->
+  <!-- <div class="col-md-3">
+        <div class="card text-bg-warning mb-3 card-width" >
+          <div class="card-header">
+            <i class="bi bi-arrow-clockwise"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Wait Condition</h5>
+            <p class="card-text">12</p>
+          </div>
+        </div>
+      </div> -->
+  <!-- <div class="col-md-3">
+        <div class="card text-bg-primary mb-3 card-width" >
+          <div class="card-header">
+            <div class="spinner-border" role="status"></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Executing</h5>
+            <p class="card-text">4</p>
+          </div>
+        </div>
+      </div> -->
+</div>

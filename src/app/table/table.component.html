@@ -1,7 +1,17 @@
-<table class="table">
-  <tbody>
-    <tr *ngFor="let item of items">
-      <td>{{ item.column1 }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="card mt-4">
+  <div class="card-header table-title">
+    Tables
+    <button type="button" class="btn btn-secondary right-icon ms-auto">
+      Secondary <i class="px-2 bi bi-download"></i>
+    </button>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.column1 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
