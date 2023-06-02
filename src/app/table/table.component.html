@@ -8,8 +8,28 @@
   <div class="card-body">
     <table class="table">
       <tbody>
-        <tr *ngFor="let item of items">
-          <td>{{ item.column1 }}</td>
+        <tr *ngFor="let job of jobs">
+          <td>{{ job.name }}</td>
+          <td *ngIf="job.status === 'Ended OK'">
+            <button type="button" class="btn btn-outline-success">
+              Done
+            </button>
+          </td>
+          <td *ngIf="job.status === 'Executing'">
+            <button type="button" class="btn btn-outline-primary">
+              {{ job.modifiedTime }}
+            </button>
+          </td>
+          <td *ngIf="job.status === 'Wait Condition'">
+            <button type="button" class="btn btn-outline-warning">
+              {{ job.modifiedTime }}
+            </button>
+          </td>
+          <td *ngIf="job.status === 'Ended Not OK'">
+            <button type="button" class="btn btn-outline-danger">
+              {{ job.modifiedTime }}
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>

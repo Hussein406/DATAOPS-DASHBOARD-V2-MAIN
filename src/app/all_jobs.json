@@ -1,0 +1,188 @@
+[
+    {
+        "jobId": "acsayul33500:00kba",
+        "folderId": "acsayul33500:",
+        "numberOfRuns": 0,
+        "name": "FPCARGIN01-INFORMATICA-MONTHLY",
+        "folder": "FPCARGIN01-INFORMATICA-MONTHLY",
+        "type": "Folder",
+        "status": "Wait Condition",
+        "held": true,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "",
+        "endTime": "",
+        "estimatedStartTime": [
+            "20230405221450"
+        ],
+        "estimatedEndTime": [
+            "20230405222400"
+        ],
+        "orderDate": "230125",
+        "ctm": "acsayul33500",
+        "description": "",
+        "host": "",
+        "application": "CARGO",
+        "subApplication": "MONTHLY",
+        "outputURI": "Job did not run, it has no output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:00kba/log"
+    },
+    {
+        "jobId": "acsayul33500:00ks0",
+        "folderId": "acsayul33500:",
+        "numberOfRuns": 0,
+        "name": "FPCARGIN01-INFORMATICA-MONTHLY",
+        "folder": "FPCARGIN01-INFORMATICA-MONTHLY",
+        "type": "Folder",
+        "status": "Wait Condition",
+        "held": true,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "",
+        "endTime": "",
+        "estimatedStartTime": [
+            "20230405221450"
+        ],
+        "estimatedEndTime": [
+            "20230405221730"
+        ],
+        "orderDate": "230125",
+        "ctm": "acsayul33500",
+        "description": "",
+        "host": "",
+        "application": "CARGO",
+        "subApplication": "MONTHLY",
+        "outputURI": "Job did not run, it has no output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:00ks0/log"
+    },
+    {
+        "jobId": "acsayul33500:01kte",
+        "folderId": "acsayul33500:",
+        "numberOfRuns": 1,
+        "name": "FPCARGIN01-INFORMATICA_DAILY",
+        "folder": "FPCARGIN01-INFORMATICA_DAILY",
+        "type": "Folder",
+        "status": "Executing",
+        "held": false,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "20230405070006",
+        "endTime": "",
+        "estimatedStartTime": [
+            "20230405070006"
+        ],
+        "estimatedEndTime": [
+            "20230406063400"
+        ],
+        "orderDate": "230405",
+        "ctm": "acsayul33500",
+        "description": "",
+        "host": "",
+        "application": "CARGO",
+        "subApplication": "DAILY",
+        "outputURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01kte/output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01kte/log"
+    },
+    {
+        "jobId": "acsayul33500:01l7u",
+        "folderId": "acsayul33500:01kte",
+        "numberOfRuns": 1,
+        "name": "PINCARG0411D-DIM_AZ",
+        "folder": "FPCARGIN01-INFORMATICA_DAILY",
+        "type": "Command",
+        "status": "Ended OK",
+        "held": false,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "20230405135808",
+        "endTime": "20230405141855",
+        "orderDate": "230405",
+        "ctm": "acsayul33500",
+        "description": "Workflow run.",
+        "host": "dptlswtprd02",
+        "application": "CARGO",
+        "subApplication": "DAILY",
+        "outputURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01l7u/output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01l7u/log"
+    },
+    {
+        "jobId": "acsayul33500:01ktt",
+        "folderId": "acsayul33500:01kte",
+        "numberOfRuns": 1,
+        "name": "PINCARG0310D-DIM_AZ",
+        "folder": "FPCARGIN01-INFORMATICA_DAILY",
+        "type": "Command",
+        "status": "Ended OK",
+        "held": false,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "20230405151603",
+        "endTime": "20230405154313",
+        "orderDate": "230405",
+        "ctm": "acsayul33500",
+        "description": "Workflow run",
+        "host": "dptlswtprd02",
+        "application": "CARGO",
+        "subApplication": "DAILY",
+        "outputURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktt/output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktt/log"
+    },
+
+    {
+        "jobId": "acsayul33500:01ktm",
+        "folderId": "acsayul33500:01kte",
+        "numberOfRuns": 1,
+        "name": "PINCARG0721D-FW_AZ",
+        "folder": "FPCARGIN01-INFORMATICA_DAILY",
+        "type": "Command",
+        "status": "Ended Not OK",
+        "held": false,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "20230405154315",
+        "endTime": "20230405161343",
+        "estimatedStartTime": [
+            "20230405221450"
+        ],
+        "estimatedEndTime": [
+            "20230405221500"
+        ],
+        "orderDate": "230405",
+        "ctm": "acsayul33500",
+        "description": "Its migrated jobs for the cargo informatica code to Snowflake python code. Need to scheduled according to the original job.",
+        "host": "dptlswtprd02",
+        "application": "CARGO",
+        "subApplication": "DAILY",
+        "outputURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktm/output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktm/log"
+    },
+
+    {
+        "jobId": "acsayul33500:01ktk",
+        "folderId": "acsayul33500:01kte",
+        "numberOfRuns": 1,
+        "name": "PINCARG0411D-FW_AZ",
+        "folder": "FPCARGIN01-INFORMATICA_DAILY",
+        "type": "Command",
+        "status": "Ended Not OK",
+        "held": false,
+        "deleted": false,
+        "cyclic": false,
+        "startTime": "20230405102847",
+        "endTime": "20230405105919",
+        "estimatedStartTime": [
+            "20230405221450"
+        ],
+        "estimatedEndTime": [
+            "20230405222440"
+        ],
+        "orderDate": "230405",
+        "ctm": "acsayul33500",
+        "description": "Its migrated jobs for the cargo informatica code to Snowflake python code. Need to scheduled according to the original job.",
+        "host": "dptlswtprd02",
+        "application": "CARGO",
+        "subApplication": "DAILY",
+        "outputURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktk/output",
+        "logURI": "https://acsayul33502.aircanada.ca:8446/automation-api/run/job/acsayul33500:01ktk/log"
+    }
+  ]
