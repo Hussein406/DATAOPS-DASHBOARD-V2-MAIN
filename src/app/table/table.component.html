@@ -6,10 +6,32 @@
     </button>
   </div>
   <div class="card-body">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="selectedDate"
+            ngbDatepicker
+            #datepicker="ngbDatepicker"
+          />
+        </div>
+        <div class="col-auto">
+          <button
+            class="btn btn-outline-secondary"
+            (click)="datepicker.toggle()"
+          >
+            <i class="bi bi-calendar-check"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <table class="table">
       <tbody>
         <tr *ngFor="let job of jobs">
-          <td>{{ job.name }} </td>
+          <td>{{ job.name }}</td>
           <td>
             <!-- <ul *ngFor="let subJob of job.arrays">
               <li>
@@ -20,7 +42,9 @@
               <ng-container *ngFor="let subJob of job.arrays">
                 <ng-container [ngSwitch]="subJob.status">
                   <ng-container *ngSwitchCase="'Ended OK'">
-                    <button type="button" class="btn btn-outline-success mx-2">Done</button>
+                    <button type="button" class="btn btn-outline-success mx-2">
+                      Done
+                    </button>
                   </ng-container>
                   <ng-container *ngSwitchCase="'Executing'">
                     <button type="button" class="btn btn-outline-primary mx-2">

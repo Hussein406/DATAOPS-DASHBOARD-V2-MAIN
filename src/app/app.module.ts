@@ -26,6 +26,8 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GraphComponent } from './graph/graph.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: 'graph', component: TableComponent},
       {path: 'table', component: GraphComponent},
-    ])
+    ]),
+    FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
