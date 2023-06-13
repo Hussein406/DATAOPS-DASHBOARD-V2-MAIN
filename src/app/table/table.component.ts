@@ -3,6 +3,12 @@ import allJobs from '../all_jobs.json';
 import moment from 'moment';
 // import { DatePipe } from '@angular/common';
 
+import {
+  NgbCalendar,
+  NgbDatepickerConfig,
+  NgbDateStruct,
+} from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -20,6 +26,17 @@ export class TableComponent implements OnInit {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
     return `${year}${month}${day}${hours}${minutes}${seconds}`;
+  }
+
+  selectedDate: NgbDateStruct | undefined;
+
+  constructor(
+    private calendar: NgbCalendar,
+    private config: NgbDatepickerConfig
+  ) {
+    // Customize the datepicker configuration
+    config.minDate = { year: 1900, month: 1, day: 1 };
+    config.maxDate = this.calendar.getToday();
   }
   ngOnInit(): void {
     console.log(allJobs);
@@ -44,7 +61,7 @@ export class TableComponent implements OnInit {
 
     const result: any[] = [];
     for (const key in organizedData) {
-      const date = this.formatDate()
+      const date = this.formatDate();
       if (organizedData.hasOwnProperty(key)) {
         const data = organizedData[key];
         const modifiedData = data.map((job: any) => {
@@ -88,4 +105,6 @@ export class TableComponent implements OnInit {
 
     return result;
   }
+
+
 }
